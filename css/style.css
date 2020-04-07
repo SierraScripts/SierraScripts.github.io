@@ -1,0 +1,412 @@
+@font-face {
+    font-family: 'gsBold';
+    src:
+            local('gsBold'),
+            url('../resources/gs_bold.ttf')
+            format('truetype');
+}
+
+@font-face {
+    font-family: 'stylish';
+    src:
+            local('stylish'),
+            url('../resources/stylish.ttf')
+            format('truetype');
+}
+
+@font-face {
+    font-family: 'buttons';
+    src:
+            local('stylish'),
+            url('../resources/buttons.ttf')
+            format('truetype');
+}
+
+@font-face {
+    font-family: 'Monoid-Regular';
+    src:
+            local('Monoid-Regular'),
+            url('../resources/Monoid-Regular.ttf')
+            format('truetype');
+}
+
+@font-face {
+    font-family: 'Monoid-Bold';
+    src:
+            local('Monoid-Bold'),
+            url('../resources/Monoid-Bold.ttf')
+            format('truetype');
+}
+
+body {
+    background-color: #FBFEF9;
+    font-family: 'stylish', serif;
+}
+
+.bg-dark {
+    background-color: #3e5b61!important;
+    transition: 0.5s;
+}
+
+.bg-transparent {
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+.main {
+    /*width: 300px;*/
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    height: 200px;
+    text-align:center;
+}
+
+img.absolute {
+    height: 100%;
+    margin:0 -100%;
+}
+
+.scroll-prompt a {
+    color: white;
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    margin: 0 auto;
+    cursor: pointer;
+    text-decoration: none !important;
+}
+
+.scroll-prompt a span {
+    font-size: 30px;
+    line-height: 40px;
+    display: block;
+    padding: 0;
+    margin: 0 0 0 2px;
+}
+
+.scroll-prompt {
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    /*-webkit-animation-duration: 1s;*/
+    /*animation-duration: 1s;*/
+    /*-webkit-animation-delay: 3s;*/
+    /*animation-delay: 3s;*/
+    /*-webkit-animation-fill-mode: both;*/
+    /*animation-fill-mode: both;*/
+    /*-webkit-animation-name: fadeIn;*/
+    /*animation-name: fadeIn;*/
+}
+
+.bookEntry {
+    /*border: 3px solid black;*/
+    font-family: 'gsBold';
+}
+
+#artpane {
+    height: inherit;
+    /*background-image: url("../resources/7ukrCw.jpg");*/
+}
+
+.c3-text, html.no-touch .btn.c3-text:hover, .btn.c3-text:focus, .btn.c3-text:active, blockquote {
+    color: #0a70dc;
+}
+
+footer {
+    padding: 45px 0 80px;
+}
+
+.heading span.line, h1 span.line, h2 span.line, h3 span.line, h4 span.line, h5 span.line, h6 span.line {
+    position: relative;
+    top: -3px;
+    display: inline-block;
+    padding-right: 7.5%;
+    padding-bottom: 3px;
+    border-width: 0 0 5px;
+    border-style: solid;
+    border-color: inherit;
+}
+nav.footer ul li a, nav.footer ul li div {
+    display: inline;
+    padding: 0;
+}
+
+footer {
+    padding: 45px 0 80px;
+    color: white;
+    background-color: #6E8894;
+}
+
+html.no-touch a:hover, html.touch a:hover, a:focus, a:active, a:visited {
+    text-decoration: none !important;
+}
+
+footer a, footer .heading {
+    color: white;
+}
+
+nav.footer ul {
+    font-size: 12px;
+}
+
+h1, h2, h3, h4, h5, h6, .heading, nav.main, table thead th, nav.tabs, .btn, button, .link.text-uppercase a, nav.sub, .pricing-menu .head .heading {
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.apc .heading.main {
+    font-size: 25px;
+    margin: 0;
+}
+
+#brand {
+    color: white;
+}
+
+body, html {
+    height: 100%;
+}
+
+.parallax {
+    /* The image used */
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    /*background-image: url("../resources/antiquebooks.jpg");*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-device-width: 1024px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+
+#register-overlay, .register-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    visibility: hidden;
+    opacity: 0;
+    background-color: rgba(0,0,0,0.85);
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+.splash-btn {
+    font-family: 'buttons';
+    color: #f7f7f7;
+    border-radius: 0;
+    background-color: #333;
+    opacity: 0.85;
+    transition: opacity 100ms;
+}
+
+.btn:hover {
+    color: white;
+    transition: opacity 100ms;
+    opacity: 1;
+}
+
+.splash-form, .splash-form-control {
+    font-family: 'buttons';
+    color: #fff;
+    border-radius: 0;
+    background-color: #555;
+    opacity: 0.90;
+    border: none;
+}
+
+#titleheader {
+    min-width: 150px;
+    font-size: 3vw;
+    letter-spacing: 0.3vw;
+    color: #f7f7f7;
+}
+
+.book-cover {
+    max-width: 100%;
+    max-height: 180px;
+}
+
+.overlay-form {
+    color: white;
+}
+
+.cover-container {
+    text-align: center;
+}
+
+.logo-link {
+    background-color: transparent;
+    border: none;
+    display: inline-block;
+    margin-bottom: 0;
+    font-size: 200%;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+
+    color: white;
+}
+
+.profilebuttonimage {
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+}
+
+.profilebutton {
+    border: none;
+    height: 34px;
+    width: 34px;
+    padding: 0;
+    margin: 0;
+    margin-right: 10px;
+    background-color: transparent;
+}
+
+.profilebuttonimagecontainer {
+    height: inherit;
+    position: relative;
+    overflow: hidden;
+}
+
+.ghost-btn {
+    height: 100%;
+    background-color: transparent;
+    font-size: 115%;
+}
+
+.book-nav {
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    position: absolute;
+    color: #f7f7f7;
+    height: 80px;
+}
+
+.full-nav {
+    height: 100%;
+    position: relative;
+}
+
+.nav-center {
+    padding-top: 23px;
+}
+
+.dropdown-menu {
+    border-radius: 0;
+}
+
+.page {
+    display: none;
+}
+
+.page:nth-child(2) {
+    display: block;
+}
+
+.nav-pills li a{
+    border-radius: 0;
+}
+
+#search {
+    height: 34px;
+    width: 34px;
+    margin-right: 10px;
+    background-color: transparent;
+}
+
+.btn-linkedin {
+    width: 153px;
+    background: #0E76A8;
+    border-radius: 0;
+    color: #fff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #084461;
+}
+.btn-linkedin:link, .btn-linkedin:visited {
+    color: #fff;
+}
+.btn-linkedin:active, .btn-linkedin:hover {
+    background: #084461;
+    color: #fff;
+}
+.btn-facebook {
+    width: 153px;
+    background: #3B5998;
+    border-radius: 0;
+    color: #fff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #263961;
+}
+.btn-facebook:link, .btn-facebook:visited {
+    color: #fff;
+}
+.btn-facebook:active, .btn-facebook:hover {
+    background: #263961;
+    color: #fff;
+}
+
+.btn-github {
+    width: 153px;
+    background: #444;
+    border-radius: 0;
+    color: #fff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0,0,0,0.2);
+}
+.btn-github:link, .btn-github:visited {
+    color: #fff;
+}
+.btn-github:active, .btn-github:hover {
+    background: #2b2b2b;
+    color: #fff;
+}
+
+.social ul {
+    list-style-type:none;
+    padding: 0;
+}
+
+.social ul li {
+    padding: 3px;
+}
