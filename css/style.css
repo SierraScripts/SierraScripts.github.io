@@ -171,6 +171,18 @@ body, html {
     height: 100%;
 }
 
+.logo-red {
+    color: #dd574e;
+}
+
+.logo-grey {
+    color: #3e5b61;
+}
+
+.logo-black {
+    color: balck;
+}
+
 .parallax {
     /* The image used */
 
