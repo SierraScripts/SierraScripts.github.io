@@ -19,13 +19,15 @@
             $(window).scroll(function () {
                 if ($(this).scrollTop() < 70) {
                     $('.masthead').removeClass("bg-dark navbar-dark").addClass("bg-transparent navbar-light");
+                    $('.scroll-prompt').fadeIn(0.5);
                 } else {
                     $('.masthead').addClass("bg-dark navbar-dark").removeClass("bg-transparent navbar-light");
+                    $('.scroll-prompt').fadeOut(0.5);
                 }
             });
 
             $('.scroll-prompt').click(function () {
-                var target = ($("#what-we-do-description").offset().top - 56);
+                var target = ($("#about-description").offset().top - 56);
                 $("html, body").animate({
                     scrollTop: target
                 }, 600);
@@ -37,22 +39,8 @@
                 }, 600);
             });
 
-            $('#what-we-do-nav').click(function () {
-                var target = ($("#what-we-do-description").offset().top - 56);
-                $("html, body").animate({
-                    scrollTop: target
-                }, 600);
-            });
-
-            $('#about-us-nav').click(function () {
-                var target = ($("#about-us-description").offset().top - 56);
-                $("html, body").animate({
-                    scrollTop: target
-                }, 600);
-            });
-
-            $('#get-in-touch-nav').click(function () {
-                var target = ($("#contact-us-description").offset().top - 56);
+            $('#about-nav').click(function () {
+                var target = ($("#about-description").offset().top - 56);
                 $("html, body").animate({
                     scrollTop: target
                 }, 600);
@@ -71,19 +59,20 @@
         <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li id="home-nav" class="nav-item active">
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
-            <li id="what-we-do-nav" class="nav-item"><a class="nav-link" href="#">What we do</a></li>
+            <li id="about-nav" class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <!-- <li id="what-we-do-nav" class="nav-item"><a class="nav-link" href="#">What we do</a></li>
             <li id="about-us-nav" class="nav-item"><a class="nav-link" href="#">About us</a></li>
-            <li id="get-in-touch-nav" class="nav-item"><a class="nav-link" href="#">Get in touch</a></li>
+            <li id="get-in-touch-nav" class="nav-item"><a class="nav-link" href="#">Get in touch</a></li> -->
         </ul>
-    </div> -->
+    </div>
 </nav>
 
-<div class="parallax" id="home-parallax" style='background-image: url("resources/splash.png");'>
+<div class="parallax" id="home-parallax" style='background-image: url("resources/splash.png"); max-width: 100%; background-size: contain;'>
 
 
     <div class="scroll-prompt" style="text-align:  center">
@@ -91,5 +80,54 @@
     </div>
 </div>
 
+
+<footer>
+    <div class="container">
+        <!-- ROW -->
+        <div class="row">
+            <div class="col-md-4 col-xs-12">
+            </div>
+
+            <div class="col-md-3 col-md-offset-1 col-xs-12">
+                <div class="company-details">
+                    <p class="heading">Sierra Scripts</p>
+                    <p>Discord and Telegram Bot design, development, and Hosting</p>
+                    <p>Contact Taetse Durand</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-md-offset-1 col-xs-12">
+                <nav class="social" id="about-description">
+                    Taetse Durand
+                    <ul>
+                        <li>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/taetse/" title="LinkedIn" class="btn btn-linkedin btn-lg"><i
+                                class="fa fa-linkedin fa-fw"></i> LinkedIn</a>
+                        </li>
+                        <li>
+                            <a target="_blank" rel="noopener noreferrer" href="https://github.com/Taetse" title="GitHub" class="btn btn-github btn-lg">
+                            <i class="fa fa-github fa-fw"></i>GitHub</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            
+        </div>
+        <!--// ROW -->
+        <!-- ROW -->
+        <div class="row">
+            <div class="col-xs-1">
+                <nav class="footer">
+                    <ul>
+                        <li class="copyright">
+                            <div>© 2020 SierraScripts</div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!--// ROW -->
+    </div>
+</footer>
 </body>
 </html>
