@@ -32,14 +32,20 @@
                 var target = ($("#about-description").offset().top - 56);
                 $("html, body").animate({
                     scrollTop: target
-                }, 600);
+                }, {
+                    queue: false,
+                    duration: 600
+                });
                 return false;
             });
 
             $('#home-nav, #brand-nav').click(function () {
                 $("html, body").animate({
                     scrollTop: 0
-                }, 600);
+                }, {
+                    queue: false,
+                    duration: 600
+                });
                 return false;
             });
 
@@ -47,7 +53,10 @@
                 var target = ($("#about-description").offset().top - 56);
                 $("html, body").animate({
                     scrollTop: target
-                }, 600);
+                }, {
+                    queue: false,
+                    duration: 600
+                });
                 return false;
             });
         })
