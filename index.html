@@ -16,6 +16,8 @@
 
     <script>
         $(function () {
+            document.getElementById("year").innerHTML = new Date().getFullYear();
+            
             $(window).scroll(function () {
                 if ($(this).scrollTop() < 70) {
                     $('.masthead').removeClass("bg-dark navbar-dark").addClass("bg-transparent navbar-light");
@@ -31,12 +33,14 @@
                 $("html, body").animate({
                     scrollTop: target
                 }, 600);
+                return false;
             });
 
             $('#home-nav, #brand-nav').click(function () {
                 $("html, body").animate({
                     scrollTop: 0
                 }, 600);
+                return false;
             });
 
             $('#about-nav').click(function () {
@@ -44,6 +48,7 @@
                 $("html, body").animate({
                     scrollTop: target
                 }, 600);
+                return false;
             });
         })
     </script>
@@ -132,7 +137,7 @@
                         </li>
                         <li>
                             <a target="_blank" rel="noopener noreferrer" href="https://github.com/Taetse" title="GitHub" class="btn btn-github btn-lg">
-                            <i class="fa fa-github fa-fw"></i>GitHub</a>
+                            <i class="fa fa-github fa-fw"></i> GitHub</a>
                         </li>
                     </ul>
                 </nav>
@@ -142,11 +147,11 @@
         <!--// ROW -->
         <!-- ROW -->
         <div class="row">
-            <div class="col-xs-1">
+            <div class="col" style="text-align: center;">
                 <nav class="footer">
-                    <ul>
+                    <ul style="list-style-type: none;">
                         <li class="copyright">
-                            <div>© 2020 SierraScripts</div>
+                            <div>© <span id="year">2020</span> SierraScripts</div>
                         </li>
                     </ul>
                 </nav>
