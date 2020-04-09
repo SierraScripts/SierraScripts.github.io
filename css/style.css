@@ -135,10 +135,16 @@ nav.footer ul li a, nav.footer ul li div {
     padding: 0;
 }
 
+nav.copy {
+    font-size: 11px;
+    color: whitesmoke;
+}
+
 footer {
     padding: 45px 0 80px;
     color: white;
     background-color: #6E8894;
+    font-weight: 100;
 }
 
 html.no-touch a:hover, html.touch a:hover, a:focus, a:active, a:visited {
